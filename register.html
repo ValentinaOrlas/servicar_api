@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/fromRegister.css">
+    <title>Form Register</title>
+</head>
+<body>
+    <form id="registerForm" class="content-form">
+        <h2>SING UP HERE</h2>
+        <label>Name: </label>
+        <input type="text" id="fullName" name="fullName" placeholder="Name" required>
+        <label>Email: </label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <label>Password: </label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <label>Role: </label>
+        <select id="role" name="role" required>
+            <option value="Customer">Customer</option>
+            <option value="Mechanic">Mechanic</option>
+            <option value="Administrator">Administrator</option>
+        </select>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Modal para la confirmación -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Registro exitoso!</p>
+            <button id="confirmButton">Aceptar</button>
+        </div>
+    </div>
+    
+    <script src="./src/scripts/formRegister.js"></script>
+</body>
+</html>
