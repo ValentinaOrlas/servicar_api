@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle CRUD</title>
+    <link rel="stylesheet" href="./styles/crudVehicles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Management</h1>
+        <form id="vehicle-form">
+            <input type="text" id="make" placeholder="Make" required>
+            <input type="text" id="model" placeholder="Model" required>
+            <input type="number" id="year" placeholder="Year" required>
+            <button type="submit">Add Vehicle</button>
+        </form>
+        <div id="vehicle-list"></div>
+    </div>
+    <script src="./src/scripts/crudVehicles.js"></script>
+</body>
+</html>
